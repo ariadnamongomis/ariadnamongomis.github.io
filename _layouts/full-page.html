@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="section1">
+      <h1>{{ page.section1_title }}</h1>
+      <p>{{ page.section1_content }}</p>
+    </section>
+    
+    <section id="section2">
+      <h1>{{ page.section2_title }}</h1>
+      <p>{{ page.section2_content }}</p>
+    </section>
 
+    <section id="section3">
+      <h1>{{ page.section3_title }}</h1>
+      <p>{{ page.section3_content }}</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer Content Here</p>
+  </footer>
+</body>
+</html>
