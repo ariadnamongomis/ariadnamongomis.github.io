@@ -203,7 +203,7 @@ img {
 .navbar-custom .navbar-brand-logo img,
 .navbar-custom.top-nav-short .navbar-brand-logo img,
 .navbar-custom.top-nav-short-permanent .navbar-brand-logo img {
-  height: 4rem;
+  height: 2rem;
 }
 
 .navbar-custom .navbar-nav .nav-item {
@@ -222,6 +222,7 @@ img {
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
   color: var(--navbar-text-col);
+  text-shadow: 1px 1px 2px black; /* Black shadow */
 }
 
 .navbar-toggler {
@@ -511,8 +512,11 @@ footer .footer-custom-content {
 }
 
 .post-preview .post-title {
-  font-size: 1.875rem;
-  margin-top: 0;
+  font-size: 1.25rem;
+  margin-top: 2;
+  line-height: 1.5; /* Ensures proper spacing between lines */
+  white-space: normal; /* Allows wrapping if the title is long */
+  overflow-wrap: break-word; /* Breaks long words to fit within the container */
 }
 .post-preview .post-subtitle {
   margin: 0;
